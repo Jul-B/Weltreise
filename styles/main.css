@@ -6,3 +6,13 @@
 .box-button--bottom {
   align-self: flex-end;
 }
+
+.images-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.images-wrapper .image {
+  margin-bottom: 10px;
+}
