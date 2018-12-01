@@ -3,64 +3,200 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
 
   <body>
-    <div>
-      Beim ersten Besuch habe ich die Hauptstadt von Thailand gar nicht gemocht.
-      Zu laut, zu hektisch, zu groß, zu modern, zu unfreundlich. Aber dann kam
-      alles anders. Seit mehreren Jahren ist die Metropole meine Homebase und
-      Lieblingsstadt. Bangkok ist die meistbesuchte Stadt der Welt und gilt
-      trotzdem als Moloch. Wenn du aber unter die Oberfläche schaust, findest du
-      eine vielschichtige und sich immer wieder neu erfindende Metropole.
-      Thailands Metropole ist eine der abwechslungsreichsten Städte der Welt.
-      Vom Weltkulturerbe am Fluss in der Altstadt sind es wenige Kilometer zu
-      den Wolkenkratzern und Shopping Malls der glitzernden Innenstadt. Das
-      Essen ist bekanntermaßen superlecker. Mehr als 555 Dinge kannst du in
-      Bangkok machen und das Preisniveau ist angenehm günstig. Wird die Stadt
-      doch einmal langweilig oder zu viel? Ganz Zentralthailand liegt vor der
-      Haustür mit Nationalparks, Stränden, kleinen Dörfern und alten
-      Hauptstädten. Bangkok (thailändisch Krung Thep = Stadt der Engel) ist
-      Hauptstadt und einziger Stadtstaat Thailands und eine der faszinierendsten
-      Metropolen der Welt. Ein Zentrum sucht man in diesem kontrastreichen
-      Schmelztigel vergebens. Jeder Stadtteil ist ein eigenes Zentrum in der
-      Megacity, die von der Fläche her doppelt so groß wie Berlin ist. Die im
-      Jahr 1782 durch König Rama I. gegründete Stadt liegt auf einer
-      Schwemmlandebene an den Ufern des Chao Phraya, der sie in zwei Teile
-      schneidet. Den westliche Bereich bezeichnet man als "Thonburi" (bis 1971
-      eine eigenständige Stadt), während der östliche Teil das ursprüngliche
-      Bangkok ist. Die Geschichte von Bangkok der vergangenen 200 Jahre ist eng
-      verknüpft mit der Geschichte der Chakri-Dynastie, die nach wie vor den
-      thailändischen Thron besetzt - inzwischen aber ohne das Land tatsächlich
-      zu regieren. Bis ins 19. Jahrhundert hinein waren der Fluss und die Kanäle
-      (Klongs) die Hauptverkehrswege Bangkoks. Noch heute findet ein Teil des
-      Lebens, beispielsweise die schwimmenden Märkte, auf den Klongs statt. Die
-      erste bedeutende Straße wurde 1862 gebaut. Bangkok ist mit der Residenz
-      der Königsfamilie und dem Sitz der Verwaltung politisches Zentrum
-      Thailands. Daneben bildet es auch den ökonomischen, diplomatischen und
-      geistigen Mittelpunkt des Landes. Die Fäden der Industrie, des Handels und
-      der Finanzwelt Thailands laufen hier zusammen, und der Hafen gilt als
-      wichtigster des Landes. Als eine der weltoffensten Metropolen Asiens
-      bietet sie dem Besucher zwei Gesichter: hier Weltstadtatmosphäre, dort
-      dörfliche Idylle, hier gelebte Tradition, dort Verwestlichung, hier
-      Mittelalter und dort Moderne. Und dazwischen läuft der hektische und
-      nervenaufreibende Verkehr, der der Stadt eine rege Betriebsamkeit
-      verleiht, an die sich ein westlicher Besucher erst gewöhnen muss. Bangkok
-      beheimatet weltberühmte Kunstschätze. Die meisten Sehenswürdigkeiten
-      liegen in der Altstadt. Tempelbauten begegnen dem Besucher auf Schritt und
-      Tritt, circa 400 besitzt die Stadt. Auch die Kunstschätze im
-      Nationalmuseum und den Teakholzpalast Vimanmek sollte man sich nicht
-      entgehen lassen. Die Thais feiern gern, viele zum Teil religiöse, zum Teil
-      weltliche Feste finden jährlich statt. Von den nationalen Festlichkeiten
-      sind Songkran, das traditionelle thailändische Neujahrsfest vom 13. bis
-      15. April und Loy Krathong in der Vollmondnacht des 12. Mondmonats die
-      bekanntesten. Dann versammeln sich die Menschen an Flüssen, Seen und
-      Teichen und lassen lotusförmige schwimmende Körbchen mit kleinen Gaben,
-      beispielsweise mit brennenden Kerzen, ins Wasser. Wem Bangkok zu hektisch
-      und laut wird, sollte das Besichtigungsprogramm auf das Wochenende oder
-      Feiertage legen und sich bei Exkursionen in die weitere Umgebung erholen.
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="/assets/bumi.png" width="44" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="/"> Home </a>
+
+          <a class="navbar-item" href="/laender.html"> Länder </a>
+          <a class="navbar-item" href="/staedte.html"> Städte </a>
+          <a class="navbar-item" href="/gebirge.html"> Gebirge </a>
+          <a class="navbar-item" href="/orte.html"> Orte </a>
+          <a class="navbar-item" href="/apps.html"> Apps </a>
+          <a class="navbar-item" href="/leute.html"> Leute </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Bangkok</h1>
+          <h2 class="subtitle">Das Land der Curryfresser</h2>
+        </div>
+      </div>
+    </section>
+    <div class="container margin-top-bottom-40">
+      <div class="tile">
+        <div class="tile is-vertical is-8">
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title">Allgemeine Fakten</p>
+              <div class="content">
+                <div>
+                  <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="tile">
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">Eindrücke</p>
+                <div class="images-wrapper">
+                  <figure class="image is-128x128">
+                    <img
+                      src="https://bulma.io/images/placeholders/128x128.png"
+                    />
+                  </figure>
+                  <figure class="image is-128x128">
+                    <img
+                      src="https://bulma.io/images/placeholders/128x128.png"
+                    />
+                  </figure>
+                  <figure class="image is-128x128">
+                    <img
+                      src="https://bulma.io/images/placeholders/128x128.png"
+                    />
+                  </figure>
+                  <figure class="image is-128x128">
+                    <img
+                      src="https://bulma.io/images/placeholders/128x128.png"
+                    />
+                  </figure>
+                  <figure class="image is-128x128">
+                    <img
+                      src="https://bulma.io/images/placeholders/128x128.png"
+                    />
+                  </figure>
+                  <figure class="image is-128x128">
+                    <img
+                      src="https://bulma.io/images/placeholders/128x128.png"
+                    />
+                  </figure>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <div class="content">
+              <p class="title">Info</p>
+              <div class="content">
+                Beim ersten Besuch habe ich die Hauptstadt von Thailand gar
+                nicht gemocht. Zu laut, zu hektisch, zu groß, zu modern, zu
+                unfreundlich. Aber dann kam alles anders. Seit mehreren Jahren
+                ist die Metropole meine Homebase und Lieblingsstadt. Bangkok ist
+                die meistbesuchte Stadt der Welt und gilt trotzdem als Moloch.
+                Wenn du aber unter die Oberfläche schaust, findest du eine
+                vielschichtige und sich immer wieder neu erfindende Metropole.
+                Thailands Metropole ist eine der abwechslungsreichsten Städte
+                der Welt. Vom Weltkulturerbe am Fluss in der Altstadt sind es
+                wenige Kilometer zu den Wolkenkratzern und Shopping Malls der
+                glitzernden Innenstadt. Das Essen ist bekanntermaßen
+                superlecker. Mehr als 555 Dinge kannst du in Bangkok machen und
+                das Preisniveau ist angenehm günstig. Wird die Stadt doch einmal
+                langweilig oder zu viel? Ganz Zentralthailand liegt vor der
+                Haustür mit Nationalparks, Stränden, kleinen Dörfern und alten
+                Hauptstädten. Bangkok (thailändisch Krung Thep = Stadt der
+                Engel) ist Hauptstadt und einziger Stadtstaat Thailands und eine
+                der faszinierendsten Metropolen der Welt. Ein Zentrum sucht man
+                in diesem kontrastreichen Schmelztigel vergebens. Jeder
+                Stadtteil ist ein eigenes Zentrum in der Megacity, die von der
+                Fläche her doppelt so groß wie Berlin ist. Die im Jahr 1782
+                durch König Rama I. gegründete Stadt liegt auf einer
+                Schwemmlandebene an den Ufern des Chao Phraya, der sie in zwei
+                Teile schneidet. Den westliche Bereich bezeichnet man als
+                "Thonburi" (bis 1971 eine eigenständige Stadt), während der
+                östliche Teil das ursprüngliche Bangkok ist. Die Geschichte von
+                Bangkok der vergangenen 200 Jahre ist eng verknüpft mit der
+                Geschichte der Chakri-Dynastie, die nach wie vor den
+                thailändischen Thron besetzt - inzwischen aber ohne das Land
+                tatsächlich zu regieren. Bis ins 19. Jahrhundert hinein waren
+                der Fluss und die Kanäle (Klongs) die Hauptverkehrswege
+                Bangkoks. Noch heute findet ein Teil des Lebens, beispielsweise
+                die schwimmenden Märkte, auf den Klongs statt. Die erste
+                bedeutende Straße wurde 1862 gebaut. Bangkok ist mit der
+                Residenz der Königsfamilie und dem Sitz der Verwaltung
+                politisches Zentrum Thailands. Daneben bildet es auch den
+                ökonomischen, diplomatischen und geistigen Mittelpunkt des
+                Landes. Die Fäden der Industrie, des Handels und der Finanzwelt
+                Thailands laufen hier zusammen, und der Hafen gilt als
+                wichtigster des Landes. Als eine der weltoffensten Metropolen
+                Asiens bietet sie dem Besucher zwei Gesichter: hier
+                Weltstadtatmosphäre, dort dörfliche Idylle, hier gelebte
+                Tradition, dort Verwestlichung, hier Mittelalter und dort
+                Moderne. Und dazwischen läuft der hektische und
+                nervenaufreibende Verkehr, der der Stadt eine rege
+                Betriebsamkeit verleiht, an die sich ein westlicher Besucher
+                erst gewöhnen muss. Bangkok beheimatet weltberühmte
+                Kunstschätze. Die meisten Sehenswürdigkeiten liegen in der
+                Altstadt. Tempelbauten begegnen dem Besucher auf Schritt und
+                Tritt, circa 400 besitzt die Stadt. Auch die Kunstschätze im
+                Nationalmuseum und den Teakholzpalast Vimanmek sollte man sich
+                nicht entgehen lassen. Die Thais feiern gern, viele zum Teil
+                religiöse, zum Teil weltliche Feste finden jährlich statt. Von
+                den nationalen Festlichkeiten sind Songkran, das traditionelle
+                thailändische Neujahrsfest vom 13. bis 15. April und Loy
+                Krathong in der Vollmondnacht des 12. Mondmonats die
+                bekanntesten. Dann versammeln sich die Menschen an Flüssen, Seen
+                und Teichen und lassen lotusförmige schwimmende Körbchen mit
+                kleinen Gaben, beispielsweise mit brennenden Kerzen, ins Wasser.
+                Wem Bangkok zu hektisch und laut wird, sollte das
+                Besichtigungsprogramm auf das Wochenende oder Feiertage legen
+                und sich bei Exkursionen in die weitere Umgebung erholen.
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>P-Seminar</strong> by
+          <a href="https://www.instagram.com/juliaxmanon/">Julia Bormann</a>.
+          The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+          website content is licensed
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            >CC BY NC SA 4.0</a
+          >.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
