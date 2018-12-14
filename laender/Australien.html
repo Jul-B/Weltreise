@@ -3,32 +3,159 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
 
   <body>
-    <div>
-      Ein Land und ein Kontinent in einem. An Australien führt bei einer
-      Weltreise kein Weg vorbei. Obwohl, falls Sie wirklich alle Facetten des
-      Landes kennenlernen möchten, müssen Sie für Ihren Australien-Besuch schon
-      mehrerer Monate einplanen.
-      <div>
-        Bevor es weiter ans andere Ende der Welt geht, sollten Sie einen kurzen
-        Abstecher ins allseits bekannte Backpacker-Reiseziel Australien planen.
-        Denn hier gibt es weit mehr, als Kängurus und Koalas zu bestaunen.
-        Entdecken Sie doch einfach das Outback bei einem Roadtrip mit einem
-        Camper. Speziell die Great Ocean Road – eine der schönsten Straßen der
-        Welt – sollten Sie auf keinen Fall unbefahren lassen. Wem mehr der Sinn
-        nach Sightseeing und Shopping steht, besucht die Metropolen wie Sydney,
-        Melbourne und Perth. Wer etwas mehr Zeit mitbringt, reist auf die größte
-        australische Insel Tasmanien – die dank ihrer facettenreichen Fauna und
-        Flora an ein Neuseeland in Miniaturformat erinnert. Drei Dinge, die Sie
-        in Australien unbedingt gemacht haben sollten: Eiskaltes Bier in einem
-        „Stubby Cooler“ trinken, aber nicht auf der StraßeEinen Blick auf die 12
-        Apostel werfenMit dem Camper die Ostküste entlang fahren und die größte
-        Sandinsel Fraser sowie die Whitsunday Islands besuchen
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="/assets/bumi.png" width="44" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="/"> Home </a>
+
+          <a class="navbar-item" href="/laender.html"> Länder </a>
+          <a class="navbar-item" href="/staedte.html"> Städte </a>
+          <a class="navbar-item" href="/gebirge.html"> Gebirge </a>
+          <a class="navbar-item" href="/orte.html"> Orte </a>
+          <a class="navbar-item" href="/apps.html"> Apps </a>
+          <a class="navbar-item" href="/leute.html"> Leute </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Australien</h1>
+          <h2 class="subtitle">Eines der wohlhabendsten Länder der Welt</h2>
+        </div>
+      </div>
+    </section>
+    <div class="container margin-top-bottom-40">
+      <div class="tile">
+        <div class="tile is-vertical is-8">
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title">Allgemeine Fakten</p>
+              <div class="content">
+                <div>
+                  <ul>
+                    <li>Das Land verfügt über eine hochmoderne Service- und Dienstleistungsökonomie und über bedeutende Rohstoffvorkommen</li>
+                    <li>Seine Kultur macht es zu einem attraktiven Ziel für Migranten. Die Einwanderung ist streng reguliert</li>
+                    <li>Der Begriff „Australien“ ist abgeleitet vom lateinischen „terra australis“, was „südliches Land“ bedeutet</li>
+                    <li>Viele Aboriginesgehören zum ärmsten Teil der australischen Gesellschaft</li>
+                    <li>Landwirtschaft ist in Australien ein wichtiger Wirtschaftsfaktor</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="tile">
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">Eindrücke</p>
+                <div class="images-wrapper">
+                  <figure class="image impression">
+                    <img
+                      src="https://assets.hotelplan.com/content/TH/00/093/700/country/de/leadimage/024187.jpg"
+                    />
+                  </figure>
+                  <figure class="image impression">
+                    <img
+                      src="https://www.in-australien.com/img/large/regionen/victoria/great-ocean-road/12-apostel/Zwoelf-Apostels-Australien.jpg"
+                    />
+                  </figure>
+                  <figure class="image impression">
+                    <img
+                      src="https://www.mawista.com/blog/wp-content/uploads/2014/10/studieren-australien.jpg"
+                    />
+                  </figure>
+                  <figure class="image impression">
+                    <img
+                      src="https://www.abenteuer-reisen.de/wp/wp-content/uploads/2017/01/satc_flinders-ranges-way_flinders-ranges-and-outback_128193.jpg"
+                    />
+                  </figure>
+                  <figure class="image impression">
+                    <img
+                      src="https://www.schweizer-illustrierte.ch/sites/default/files/styles/fixed-width-708/public/teaser-images/web-australien-gross.jpg.jpg?itok=olUtdtf8&timestamp=1421401914"
+                    />
+                  </figure>
+                  <figure class="image impression">
+                    <img
+                      src="http://cdn2.spiegel.de/images/image-983861-860_poster_16x9-clsu-983861.jpg"
+                    />
+                  </figure>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <div class="content">
+              <p class="title">Info</p>
+              <div class="content">
+                Ein Land und ein Kontinent in einem. An Australien führt bei einer
+                Weltreise kein Weg vorbei. Obwohl, falls Sie wirklich alle Facetten des
+                Landes kennenlernen möchten, müssen Sie für Ihren Australien-Besuch schon
+                mehrerer Monate einplanen.
+              
+                  Bevor es weiter ans andere Ende der Welt geht, sollten Sie einen kurzen
+                  Abstecher ins allseits bekannte Backpacker-Reiseziel Australien planen.
+                  Denn hier gibt es weit mehr, als Kängurus und Koalas zu bestaunen.
+                  Entdecken Sie doch einfach das Outback bei einem Roadtrip mit einem
+                  Camper. Speziell die Great Ocean Road – eine der schönsten Straßen der
+                  Welt – sollten Sie auf keinen Fall unbefahren lassen. Wem mehr der Sinn
+                  nach Sightseeing und Shopping steht, besucht die Metropolen wie Sydney,
+                  Melbourne und Perth. Wer etwas mehr Zeit mitbringt, reist auf die größte
+                  australische Insel Tasmanien – die dank ihrer facettenreichen Fauna und
+                  Flora an ein Neuseeland in Miniaturformat erinnert. Drei Dinge, die Sie
+                  in Australien unbedingt gemacht haben sollten: Eiskaltes Bier in einem
+                  „Stubby Cooler“ trinken, aber nicht auf der StraßeEinen Blick auf die 12
+                  Apostel werfenMit dem Camper die Ostküste entlang fahren und die größte
+                  Sandinsel Fraser sowie die Whitsunday Islands besuchen
+            </div>
+          </article>
+        </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>P-Seminar</strong> by
+          <a href="https://www.instagram.com/juliaxmanon/">Julia Bormann</a>.
+          The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+          website content is licensed
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            >CC BY NC SA 4.0</a
+          >.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
+
+      
+      

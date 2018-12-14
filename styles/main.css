@@ -16,3 +16,15 @@
 .images-wrapper .image {
   margin-bottom: 10px;
 }
+
+.impression img {
+  width: 340px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.image-preview img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+}
