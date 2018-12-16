@@ -1,5 +1,4 @@
 .main-content {
-
   width: 80vw;
   margin: 20px auto;
 }
@@ -10,8 +9,21 @@
   flex-wrap: wrap;
 }
 
-.main-intro .box{
+.main-intro .box {
   width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-intro .box:last-child {
+  margin-bottom: 1.5rem;
+}
+
+.main-intro .box img {
+  height: 80%;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
 
 #mapid {
@@ -40,7 +52,7 @@
 }
 
 .impression img {
-  width: 340px;
+  wgidth: 340px;
   height: 320px;
   object-fit: cover;
 }
@@ -51,15 +63,6 @@
   object-fit: cover;
 }
 
-.my-custom-pin {
-  background-color: #583470;
-  width: 3rem;
-  height: 3rem;
-  display: block;
-  left: -1.5rem;
-  top: -1.5rem;
-  position: relative;
-  border-radius: 3rem 3rem 0;
-  transform: rotate(45deg);
-  border: 1px solid #FFFFFF"
+.packliste {
+  display: flex;
 }

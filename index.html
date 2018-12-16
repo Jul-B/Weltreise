@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/styles/main.css" />
+    <!-- CSS Framework bulma wird hinzugefügt -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css"
@@ -86,6 +87,8 @@
 
       <div><div id="mapid"></div></div>
 
+      <div class="title">Vorschläge</div>
+
       <div class="main-intro">
         <div class="box">
           <img
@@ -118,8 +121,10 @@
       </div>
     </div>
     <script async>
-      // set map
+      // initalen Karten zoom und koordinaten werden gesetzt
       var mymap = L.map("mapid").setView([0, 0], 2);
+
+      // karte source und access token(mapbox) werden gesetzt
       L.tileLayer(
         "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}",
         {
@@ -132,10 +137,12 @@
         }
       ).addTo(mymap);
 
+      // Marker für Laender, Staedte, Gebirge werden hinzugefügt
+
       // Laender
-      var indien = L.marker([20.593684, 78.96288])
+      var indien = L.marker([20.593684, 78.96288]) //  Breitengrade dann Längengrade werden gesetzt
         .addTo(mymap)
-        .bindPopup('<a href="/laender/indien.html"><b>Indien</b></a>');
+        .bindPopup('<a href="/laender/indien.html"><b>Indien</b></a>'); // dem marker html mit link hinzufügen
       var athopia = L.marker([9.147705, 40.492108])
         .addTo(mymap)
         .bindPopup('<a href="/laender/Äthopien.html"><b>Äthopien</b></a>');
@@ -159,7 +166,6 @@
         .bindPopup('<a href="/laender/Thailand.html"><b>Thailand</b></a>');
 
       // Staedte
-      // erst Breite dann Länge
       var bagan = L.marker([21.172222, 94.860278])
         .addTo(mymap)
         .bindPopup('<a href="/Städte/Bagan.html"><b>Bagan</b></a>');
