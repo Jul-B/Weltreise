@@ -1,71 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+      integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+      crossorigin=""
+    ></script>
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
-  <title>Document</title>
-</head>
-
-<body>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-
-      <a class="navbar-item" href="https://bulma.io">
-        <img src="/assets/Bumi.png" alt="kein bild">
-      </a>
-
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item">
-          Home
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="/assets/bumi.png" width="44" />
         </a>
 
-        <a class="navbar-item" href="/laender.html">
-          Länder
-        </a>
-        <a class="navbar-item" href="/staedte.html">
-          Städte
-        </a>
-        <a class="navbar-item" href="/gebirge.html">
-          Gebirge
-        </a>
-        <a class="navbar-item" href="/orte.html">
-          Orte
-        </a>
-        <a class="navbar-item" href="/apps.html">
-          Apps
-        </a>
-        <a class="navbar-item" href="/leute.html">
-          Leute
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </a>
       </div>
 
-    </div>
-  </nav>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
 
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Primary title
-        </h1>
-        <h2 class="subtitle">
-          Primary subtitle
-        </h2>
+          <a class="navbar-item" href="/laender.html"> Länder </a>
+          <a class="navbar-item" href="/staedte.html"> Städte </a>
+          <a class="navbar-item" href="/gebirge.html"> Gebirge </a>
+          <a class="navbar-item" href="/orte.html"> Orte </a>
+          <a class="navbar-item" href="/apps.html"> Apps </a>
+          <a class="navbar-item" href="/leute.html"> Leute </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-</body>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">BUMI</h1>
+          <h2 class="subtitle">
+            "Die Welt ist ein Buch, wer nie reist sieht nur eine Seite davon."
+          </h2>
+        </div>
+      </div>
+    </section>
 
+    <div><div id="mapid"></div></div>
+    <script async>
+      var mymap = L.map("mapid").setView([0, 0], 2);
+      L.tileLayer(
+        "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}",
+        {
+          attribution:
+            'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          maxZoom: 18,
+          id: "mapbox.streets",
+          accessToken:
+            "pk.eyJ1Ijoic2ltbWNvIiwiYSI6ImNqcG9razVjbjAwMmU0OG11YWxzajh5azcifQ.lU6jcsygbk0yOQMvn3yvcg"
+        }
+      ).addTo(mymap);
+
+      // Laender
+      var indien = L.marker([20.593684, 78.96288])
+        .addTo(mymap)
+        .bindPopup('<a href="/laender/indien.html"><b>Indien</b></a>');
+      var athopia = L.marker([9.147705, 40.492108])
+        .addTo(mymap)
+        .bindPopup('<a href="/laender/Äthopien.html"><b>Äthopien</b></a>');
+      var australia = L.marker([-25.274022, 133.775392])
+        .addTo(mymap)
+        .bindPopup('<a href="/laender/Australien.html"><b>Australien</b></a>');
+      var bolivia = L.marker([-16.296099, -63.584769])
+        .addTo(mymap)
+        .bindPopup('<a href="/laender/bolivien.html"><b>Bolivien</b></a>');
+      var italy = L.marker([41.87194, 12.56738])
+        .addTo(mymap)
+        .bindPopup('<a href="/laender/Italien.html"><b>Italien</b></a>');
+      var kuba = L.marker([21.521757, -77.781167])
+        .addTo(mymap)
+        .bindPopup('<a href="/laender/Kuba.html"><b>Kuba</b></a>');
+      var neuseeland = L.marker([-40.900557, 174.885971])
+        .addTo(mymap)
+        .bindPopup('<a href="/laender/Neuseeland.html"><b>Neuseeland</b></a>');
+      var thailand = L.marker([15.870032, 100.992541])
+        .addTo(mymap)
+        .bindPopup('<a href="/laender/Thailand.html"><b>Thailand</b></a>');
+
+      // Staedte
+      // erst Breite dann Länge
+      var bagan = L.marker([21.172222, 94.860278])
+        .addTo(mymap)
+        .bindPopup('<a href="/Städte/Bagan.html"><b>Bagan</b></a>');
+      var cusco = L.marker([-13.53195, -71.9674626])
+        .addTo(mymap)
+        .bindPopup('<a href="/Städte/Cusco.html"><b>Cusco</b></a>');
+      var havanna = L.marker([23.05407, -82.345189])
+        .addTo(mymap)
+        .bindPopup('<a href="/Städte/Havanna.html"><b>Havanna</b></a>');
+      var kualaLumpur = L.marker([3.139003, 101.686855])
+        .addTo(mymap)
+        .bindPopup(
+          '<a href="/Städte/Kuala Lumpur.html"><b>Kuala Lumpur</b></a>'
+        );
+      var losangeles = L.marker([34.052234, -118.243685])
+        .addTo(mymap)
+        .bindPopup('<a href="/Städte/Los Angeles.html"><b>Los Angeles</b></a>');
+      var istanbul = L.marker([41.00527, 28.97696])
+        .addTo(mymap)
+        .bindPopup('<a href="/Städte/Istanbul.html"><b>Istanbul</b></a>');
+      var hongkong = L.marker([22.396428, 114.109497])
+        .addTo(mymap)
+        .bindPopup('<a href="/Städte/Hongkok.html"><b>Hongkong</b></a>');
+      var bangkok = L.marker([13.7563309, 100.5017651])
+        .addTo(mymap)
+        .bindPopup('<a href="/Städte/Bangkok.html"><b>Bankgkok</b></a>');
+
+      // Gebirge
+
+      var alpen = L.marker([47.123721, 10.803223])
+        .addTo(mymap)
+        .bindPopup('<a href="/Gebirge/Alpen.html"><b>Alpen</b></a>');
+      var nordpatagonien = L.marker([-45.784125, -71.90918])
+        .addTo(mymap)
+        .bindPopup(
+          '<a href="/Gebirge/Nordpatagonien.html"><b>Nordpatagonien</b></a>'
+        );
+      var himalaya = L.marker([28.598316, 83.931062])
+        .addTo(mymap)
+        .bindPopup('<a href="/Gebirge/Himalaya.html"><b>Himalaya</b></a>');
+      var pyrenaeen = L.marker([42.66818, 1.00119])
+        .addTo(mymap)
+        .bindPopup('<a href="/Gebirge/Pyrenäen.html"><b>Pyrenäen</b></a>');
+      var rhoen = L.marker([50.472005, 10.068856])
+        .addTo(mymap)
+        .bindPopup('<a href="/Gebirge/Rhön.html"><b>Rhön</b></a>');
+    </script>
+  </body>
 </html>
