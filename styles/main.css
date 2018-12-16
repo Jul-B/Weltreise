@@ -1,5 +1,23 @@
+.main-content {
+
+  width: 80vw;
+  margin: 20px auto;
+}
+
+.main-intro {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-intro .box{
+  width: 48%;
+}
+
 #mapid {
-  height: 720px;
+  margin-bottom: 40px;
+  height: 540px;
+  width: 100%;
 }
 
 .margin-top-bottom-40 {
@@ -14,7 +32,7 @@
 .images-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .images-wrapper .image {
