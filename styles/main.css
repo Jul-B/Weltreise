@@ -52,7 +52,7 @@
 }
 
 .impression img {
-  wgidth: 340px;
+  width: 340px;
   height: 320px;
   object-fit: cover;
 }
